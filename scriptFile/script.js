@@ -56,4 +56,18 @@ for(let heart of HeartClass){
         const totalHeart = heartNumberConvert + 1;
         document.getElementById("heartNumber").innerText = totalHeart;
     })
-}
+};
+// copy button create 
+const copys = document.getElementsByClassName("copy-btn")
+for(let copy of copys){
+    copy.addEventListener("click",function(){
+       const copyNumber = copy.parentNode.parentNode.childNodes[7].innerText;
+       const copyCount = element("CopyCount").innerText;
+       const convertCopyCount = Number(copyCount);
+        navigator.clipboard.writeText(copyNumber).then(function(){
+            alert("©️নাম্বার কপি হয়েছে")
+            const num = convertCopyCount + 1;
+            document.getElementById("CopyCount").innerText = num;
+        })
+    })
+};
