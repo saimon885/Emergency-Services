@@ -41,3 +41,19 @@ for(let button of buttons){
     })
 }
 
+// clear button
+document.getElementById("ClearButton").addEventListener("click",function(){
+    const historyContainer = element("emptysdiv");
+    historyContainer.innerHTML = "";
+})
+// love section solved
+const HeartClass = document.getElementsByClassName("Heart");
+for(let heart of HeartClass){
+    heart.addEventListener("click",function(){
+        const heartNumber = element("heartNumber").innerText;
+        const heartNumberConvert = Number(heartNumber);
+        // console.log(heartNumberConvert);
+        const totalHeart = heartNumberConvert + 1;
+        document.getElementById("heartNumber").innerText = totalHeart;
+    })
+}
