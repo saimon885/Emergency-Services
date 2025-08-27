@@ -21,7 +21,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="md:mx-auto bg-[#F5FFF6]">
+  <body class="md:mx-auto bg-[#F5FFF6] max-w-max">
     <!-- header-start -->
     <header class="w-full md:mx-auto">
       <nav
@@ -41,19 +41,19 @@
           <div
             class="min-w-[100px] h-[3rem] bg-[#ECFFF0] rounded-3xl flex justify-center items-center p-2"
           >
-            <span class="font-bold">0</span>
+            <span id="heartNumber" class="font-bold">0</span>
             <img class="w-[1.5rem] ml-2" src="assets/heart.png" alt="Heart" />
           </div>
           <div
             class="min-w-[100px] h-[3rem] bg-[#ECFFF0] rounded-3xl flex justify-center items-center p-2"
           >
-            <span class="font-bold">100</span>
+            <span id="Money" class="font-bold">100</span>
             <img class="w-[1.5rem] ml-2" src="assets/coin.png" alt="Coin" />
           </div>
           <div
             class="min-w-[100px] h-[3rem] bg-[#00A63E] rounded-3xl flex justify-center items-center p-2 text-white"
           >
-            <span class="font-bold">0</span>
+            <span id="CopyCount" class="font-bold">0</span>
             <h1 class="ml-2 font-bold">Copy</h1>
           </div>
         </div>
@@ -76,7 +76,7 @@
     <!-- header end -->
     <!-- left side -->
     <section
-      class="section flex gap-6 mt-6 flex-col-reverse md:flex-row md:mx-5 mb-5"
+      class="section flex gap-6 mt-6 flex-col-reverse md:flex-row md:mx-5 mb-5 "
     >
       <div
         class="card-container grid md:grid-cols-3 gap-6 md:gap-5 mx-auto md:max-w-[80%] md:mx-0"
@@ -92,7 +92,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">জাতীয় জরুরি সেবা</h1>
           <p class="text-[#5C5C5C] my-3">National Emergency</p>
@@ -104,12 +104,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -126,7 +126,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">পুলিশ</h1>
           <p class="text-[#5C5C5C] my-3">Police</p>
@@ -138,12 +138,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -160,7 +160,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">ফায়ার সার্ভিস</h1>
           <p class="text-[#5C5C5C] my-3">Fire Service</p>
@@ -172,12 +172,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -194,7 +194,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">অ্যাম্বুলেন্স</h1>
           <p class="text-[#5C5C5C] my-3">Ambulance</p>
@@ -206,12 +206,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -228,7 +228,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">নারী ও শিশু সহায়তা</h1>
           <p class="text-[#5C5C5C] my-3">Women & Child Helpline</p>
@@ -240,12 +240,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -262,7 +262,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">দুদক</h1>
           <p class="text-[#5C5C5C] my-3">Anti-Corruption</p>
@@ -274,12 +274,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -296,7 +296,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">বিদ্যুৎ বিভ্রাট</h1>
           <p class="text-[#5C5C5C] my-3">Electricity Outage</p>
@@ -308,12 +308,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -330,7 +330,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">ব্র্যাক</h1>
           <p class="text-[#5C5C5C] my-3">Brac</p>
@@ -342,12 +342,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -364,7 +364,7 @@
                 alt=""
               />
             </div>
-            <div><i class="fa-regular fa-heart text-2xl"></i></div>
+            <div class="Heart"><i class="fa-regular fa-heart text-2xl"></i></div>
           </div>
           <h1 class="text-[1.25rem] font-bold mt-3">বাংলাদেশ রেলওয়ে</h1>
           <p class="text-[#5C5C5C] my-3">Bangladesh Railway</p>
@@ -376,12 +376,12 @@
           </div>
           <div class="">
             <button
-              class="btn shadow w-[45%] hover:bg-[#00A63E] hover:text-white"
+              class="btn shadow w-[45%] copy-btn hover:bg-[#00A63E] hover:text-white"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="btn bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
+              class="btn button-class bg-[#00A63E] text-white w-[45%] ml-2 hover:bg-white hover:text-black"
             >
               <i class="fa-duotone fa-solid fa-phone"></i> Call
             </button>
@@ -398,23 +398,15 @@
             <p><i class="fa-regular fa-clock mr-2"></i>Call History</p>
           </div>
           <div>
-            <button class="btn bg-[#00A63E] text-white rounded-3xl">
+            <button id="ClearButton" class="btn bg-[#00A63E] text-white rounded-3xl">
               Clear
             </button>
           </div>
         </div>
         <!-- call history start div -->
-        <div class="emptysdiv">
+        <div id="emptysdiv">
           <!-- js er jonno -->
-          <div
-            class="flex justify-between items-center my-5 bg-[#F5FFF6] p-3 rounded-2xl"
-          >
-            <div>
-              <h1 class="md:text-[11px] font-bold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-[#5C5C5C] md:text-[11px]">999</p>
-            </div>
-            <div><p class="md:text-[13px]">11:36:58 AM</p></div>
-          </div>
+          
         </div>
       </div>
     </section>
