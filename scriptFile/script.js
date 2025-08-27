@@ -8,23 +8,20 @@ const buttons = document.getElementsByClassName("button-class");
 for(let button of buttons){
     button.addEventListener("click",function(){
         let money = element("Money").innerText;
-        // console.log(moneyConvert);
         const servicesName = button.parentNode.parentNode.childNodes[3].innerText;
         const servicesNumber = button.parentNode.parentNode.childNodes[7].innerText;
         const servicesCallingNumber = button.parentNode.parentNode.childNodes[5].innerText;
-        // console.log(servicesCallingNumber);
         const historyContainer = element("emptysdiv");
         const time = new Date();
         const currentTime = time.toLocaleTimeString();
-        // console.log(currentTime);
         let moneyConvert = Number(money);
         if(moneyConvert >= 20){
             const oddMoney = moneyConvert - 20;
             document.getElementById("Money").innerText = oddMoney;
-            alert(`Calling ${servicesCallingNumber}`)
+            alert(`📞Calling ${servicesCallingNumber}..${servicesNumber}..`)
             const histoyOption = document.createElement("div")
             histoyOption.innerHTML = `<div
-            class="flex justify-between items-center my-5 bg-[#F5FFF6] p-3 rounded-2xl"
+            class="flex justify-between items-center shadow my-5 bg-[#F5FFF6] p-3 rounded-2xl"
           >
             <div>
               <h1 class="md:text-[11px] font-bold">${servicesName}</h1>
@@ -52,7 +49,6 @@ for(let heart of HeartClass){
     heart.addEventListener("click",function(){
         const heartNumber = element("heartNumber").innerText;
         const heartNumberConvert = Number(heartNumber);
-        // console.log(heartNumberConvert);
         const totalHeart = heartNumberConvert + 1;
         document.getElementById("heartNumber").innerText = totalHeart;
     })
@@ -62,10 +58,11 @@ const copys = document.getElementsByClassName("copy-btn")
 for(let copy of copys){
     copy.addEventListener("click",function(){
        const copyNumber = copy.parentNode.parentNode.childNodes[7].innerText;
+        const Numbers = copy.parentNode.parentNode.childNodes[7].innerText;
        const copyCount = element("CopyCount").innerText;
        const convertCopyCount = Number(copyCount);
         navigator.clipboard.writeText(copyNumber).then(function(){
-            alert("©️নাম্বার কপি হয়েছে")
+            alert(`নাম্বার কপি হয়েছে :${Numbers}`)
             const num = convertCopyCount + 1;
             document.getElementById("CopyCount").innerText = num;
         })
